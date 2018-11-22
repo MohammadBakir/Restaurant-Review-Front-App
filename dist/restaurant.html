@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	  <!-- Normalize.css for better cross-browser consistency -->
+	  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	  <!-- Main CSS file -->
+	  <link rel="stylesheet" href="/main.css" type="text/css">
+	  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+	  <title>Restaurant Info</title>
+
+	</head>
+	  
+	<body class="inside">
+	  <!-- Beginning header -->
+	  <header>
+		<!-- Beginning nav -->
+		<nav>
+		  <h1>
+			<a href="/">Restaurant Reviews</a>
+		  </h1>
+		</nav>
+		<!-- End nav -->
+		<!-- Beginning breadcrumb -->
+		<ul id="breadcrumb" aria-labelledby="home-label">
+		  <li >
+			<a href="/">Home</a>
+		  </li>
+		</ul>
+		<label id="home-label" class="aria-label">Subheader with link to Home Page</label>
+		<!-- End breadcrumb -->
+	  </header>
+	  <!-- End header -->
+
+	  <!-- Beginning main -->
+	  <main id="maincontent">
+		<!-- Beginning restaurant -->
+		<section id="restaurant-container">
+		  <h1 id="restaurant-name"></h1>
+		  <img id="restaurant-img">
+		  <p id="restaurant-cuisine"></p>
+		</section>
+		<!-- Beginning map -->
+		<section id="map-container">
+		  <div id="map" role="application" aria-labelledby="map-label"></div>
+		</section>
+		<label id="map-label" class="aria-label">mapbox map application displaying restaurant location</label>
+		<!-- End map -->
+		<section>
+		  <p id="restaurant-address" aria-labelledby="address-label"></p>
+		  <label id="address-label" class="aria-label">restaurant address</label>
+		  
+		  <table id="restaurant-hours" aria-labelledby="hours-label"></table>
+		  <label id="hours-label" class="aria-label">hours of operation</label>
+		</section>
+		<!-- end restaurant -->
+		<!-- Beginning reviews -->
+		<div>
+			<section id="reviews-container">
+			  <ul id="reviews-list" tabindex=0 aria-labelledby="reviews-label"></ul>
+			</section>
+			<label id="reviews-label" class="aria-label">restaurant customer reviews</label>
+		</div>
+		<!-- End reviews -->
+	  </main>
+	  <!-- End main -->
+	<!-- Beginning footer -->
+		<div> 
+		  <footer id="footer">
+			Copyright (c) 2017 <a href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+		  </footer>
+		</div>
+		  <!-- End footer -->
+
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
+	  <!-- Beginning scripts -->
+	  <!-- Database helpers -->
+	  
+	<script type="application/javascript" charset="utf-8" src="/OfflineToOnline.js"></script>
+	<script type="application/javascript" charset="utf-8" src="/idb.js"></script>
+	<script type="module" src ="/idb.js"></script>
+	<script type="text/javascript" src="/dbhelper.js"></script>
+	<script type="text/javascript" src="/restaurant_info.js"></script>
+
+	</body>
+
+</html>
