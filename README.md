@@ -19,5 +19,5 @@ Icons credit to Flaticons
 
 ## How to view
 
-This project is hosted on [Netlify](https://github.com/udacity/mws-restaurant-stage-3).
+This project is hosted on [Netlify](https://restaurantreviewappmb.netlify.com/).
 
