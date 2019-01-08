@@ -1,5 +1,7 @@
 # Stage Three of Restaurant Reviews (Mohammad Bakir)
 ---
+## This repo is setup for Netlify
+
 ## Overview
 
 This code covers Stage 3 of the Restaurant Reviews web application for the Mobile Web Specialist course from Udacity. It has the following features:
